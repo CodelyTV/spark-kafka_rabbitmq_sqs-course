@@ -11,7 +11,7 @@ object Dependencies {
     "org.apache.spark"       %% "spark-sql-kafka-0-10" % "3.5.0",
     "org.apache.hadoop"       % "hadoop-aws"           % "3.2.2",
     "com.rabbitmq"            % "amqp-client"          % "5.21.0",
-    "com.typesafe"            % "config"               % "1.4.1",
+    "com.typesafe"            % "config"               % "1.4.3",
     "io.delta"               %% "delta-spark"          % "3.1.0",
     "io.spray"               %% "spray-json"           % "1.3.6"
   )
