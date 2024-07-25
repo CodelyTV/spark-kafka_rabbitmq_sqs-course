@@ -14,7 +14,7 @@ object Dependencies {
     "com.typesafe"            % "config"               % "1.4.1",
     "io.delta"               %% "delta-spark"          % "3.1.0",
     "io.spray"               %% "spray-json"           % "1.3.6",
-    "io.circe"               %% "circe-core"           % "0.14.7",
+    "io.circe"               %% "circe-core"           % "0.14.9",
     "io.circe"               %% "circe-generic"        % "0.14.9",
     "io.circe"               %% "circe-parser"         % "0.14.9"
   )
