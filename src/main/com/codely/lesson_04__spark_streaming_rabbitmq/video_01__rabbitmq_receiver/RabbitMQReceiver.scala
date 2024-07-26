@@ -5,10 +5,10 @@ import org.apache.spark.storage.StorageLevel
 import org.apache.spark.streaming.receiver.Receiver
 
 class RabbitMQReceiver(queueName: String, host: String, port: Int, username: String, password: String)
-  extends Receiver[String](StorageLevel.MEMORY_AND_DISK_2) {
+    extends Receiver[String](StorageLevel.MEMORY_AND_DISK_2) {
 
   @transient var connection: Connection = _
-  @transient var channel: Channel = _
+  @transient var channel: Channel       = _
 
   override def onStart(): Unit = {
 
@@ -33,11 +33,11 @@ class RabbitMQReceiver(queueName: String, host: String, port: Int, username: Str
     try {
       val consumer = new DefaultConsumer(channel) {
         override def handleDelivery(
-                                     consumerTag: String,
-                                     envelope: Envelope,
-                                     properties: AMQP.BasicProperties,
-                                     body: Array[Byte]
-                                   ): Unit = {
+            consumerTag: String,
+            envelope: Envelope,
+            properties: AMQP.BasicProperties,
+            body: Array[Byte]
+        ): Unit = {
           val message = new String(body, "UTF-8")
           store(message)
         }
