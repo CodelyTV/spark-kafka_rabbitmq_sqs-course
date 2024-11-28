@@ -6,6 +6,5 @@ import org.apache.spark.sql.types.StructType
 
 case class RabbitMQPartitionReaderFactory(schema: StructType) extends PartitionReaderFactory {
   override def createReader(partition: InputPartition): PartitionReader[InternalRow] =
-
     RabbitMQPartitionReader(schema, partition.asInstanceOf[RabbitMQInputPartition])
 }
