@@ -12,7 +12,7 @@ object Dependencies {
     "org.apache.hadoop"       % "hadoop-aws"           % "3.2.2",
     "com.rabbitmq"            % "amqp-client"          % "5.23.0",
     "com.typesafe"            % "config"               % "1.4.3",
-    "io.delta"               %% "delta-spark"          % "3.1.0",
+    "io.delta"               %% "delta-spark"          % "3.2.1",
     "io.spray"               %% "spray-json"           % "1.3.6",
     "io.circe"               %% "circe-core"           % "0.14.10",
     "io.circe"               %% "circe-generic"        % "0.14.10",
