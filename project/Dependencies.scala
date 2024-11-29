@@ -9,7 +9,7 @@ object Dependencies {
     "org.apache.spark"       %% "spark-streaming"      % "3.5.0",
     "org.apache.spark"       %% "spark-hive"           % "3.5.0",
     "org.apache.spark"       %% "spark-sql-kafka-0-10" % "3.5.0",
-    "org.apache.hadoop"       % "hadoop-aws"           % "3.2.2",
+    "org.apache.hadoop"       % "hadoop-aws"           % "3.2.4",
     "com.rabbitmq"            % "amqp-client"          % "5.23.0",
     "com.typesafe"            % "config"               % "1.4.3",
     "io.delta"               %% "delta-spark"          % "3.1.0",
