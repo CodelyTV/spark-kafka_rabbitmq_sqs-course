@@ -20,7 +20,7 @@ object Dependencies {
   )
   private val test = Seq(
     "org.scalatest" %% "scalatest" % "3.2.19",
-    "org.scalamock" %% "scalamock" % "6.0.0"
+    "org.scalamock" %% "scalamock" % "6.1.1"
   ).map(_ % Test)
 
   val all: Seq[ModuleID] = prod ++ test
