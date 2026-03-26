@@ -19,7 +19,7 @@ object Dependencies {
     "io.circe"               %% "circe-parser"         % "0.14.10"
   )
   private val test = Seq(
-    "org.scalatest" %% "scalatest" % "3.2.19",
+    "org.scalatest" %% "scalatest" % "3.2.20",
     "org.scalamock" %% "scalamock" % "6.0.0"
   ).map(_ % Test)
 
